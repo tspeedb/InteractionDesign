@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6527974323676B32005F167D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6527974223676B32005F167D /* Model.swift */; };
+		6527974523676E45005F167D /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6527974423676E45005F167D /* SearchResultTableViewController.swift */; };
+		653676692367A0D70073EEC2 /* Siesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6536764F23679FE60073EEC2 /* Siesta.framework */; };
+		6536766A2367A0D70073EEC2 /* SiestaUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6536765723679FE60073EEC2 /* SiestaUI.framework */; };
+		6554AE8B23624B7500FB45F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6554AE8A23624B7500FB45F3 /* ViewController.swift */; };
+		6554AE8F23626CA100FB45F3 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6554AE8E23626CA100FB45F3 /* SearchPageViewController.swift */; };
+		655775012368C23E00D045CB /* Siesta.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6536764F23679FE60073EEC2 /* Siesta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		655775022368C24500D045CB /* SiestaUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6536765723679FE60073EEC2 /* SiestaUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		655775052368D94B00D045CB /* MockApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655775042368D94B00D045CB /* MockApiService.swift */; };
+		655BD102236AC416004113EE /* CellResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD101236AC416004113EE /* CellResultViewController.swift */; };
+		655CAC882358F70D00123C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655CAC872358F70D00123C52 /* Assets.xcassets */; };
+		655CAC8B2358F70D00123C52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655CAC8A2358F70D00123C52 /* Preview Assets.xcassets */; };
+		655CACA42358F70D00123C52 /* BreweryDatabaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655CACA32358F70D00123C52 /* BreweryDatabaseUITests.swift */; };
+		6582E29B237DC1E6008910A6 /* BreweryDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6582E29A237DC1E6008910A6 /* BreweryDatabaseTests.swift */; };
+		6586C3C8237DE13C00575290 /* beerGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = 6586C3C7237DE13C00575290 /* beerGlass.png */; };
+		658E6A71237939DB0036CED5 /* RealApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E6A70237939DA0036CED5 /* RealApiService.swift */; };
+		6597D0E6237200B2006AAF07 /* SearchResultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597D0DC237200B2006AAF07 /* SearchResultViewCell.swift */; };
+		65C49C232366DD5C00DADC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C49C222366DD5C00DADC1D /* AppDelegate.swift */; };
+		65C49C252366E0AF00DADC1D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C49C242366E0AF00DADC1D /* Api.swift */; };
+		65C580812362711600AA8468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6554AE9023626DBA00FB45F3 /* Main.storyboard */; };
+		65C580822362711A00AA8468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655CAC8C2358F70D00123C52 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6536764E23679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA336E4F1B2E6DDB006F702A;
+			remoteInfo = "Siesta iOS";
+		};
+		6536765023679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F2FB51E1C28645E0068DFFA;
+			remoteInfo = "Siesta macOS";
+		};
+		6536765223679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCCAF651E6A313800860D18;
+			remoteInfo = "Siesta watchOS";
+		};
+		6536765423679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCCAF721E6A31D900860D18;
+			remoteInfo = "Siesta tvOS";
+		};
+		6536765623679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAC0B3AA1D651CB500D25C44;
+			remoteInfo = "SiestaUI iOS";
+		};
+		6536765823679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAC0B3D61D651CC700D25C44;
+			remoteInfo = "SiestaUI macOS";
+		};
+		6536765A23679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5E4B4B22DCE9670059ED10;
+			remoteInfo = "SiestaUI tvOS";
+		};
+		6536765C23679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA336E591B2E6DDB006F702A;
+			remoteInfo = "SiestaTests iOS";
+		};
+		6536765E23679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F0FAFAC1D033FCD00CE1B61;
+			remoteInfo = "SiestaTests macOS";
+		};
+		6536766023679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCCAF7A1E6A31DA00860D18;
+			remoteInfo = "SiestaTests tvOS";
+		};
+		6536766223679FE60073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA19D06E1D9ADC1800D15F3A;
+			remoteInfo = "SiestaPerformanceTests macOS";
+		};
+		653676642367A0320073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA336E4E1B2E6DDB006F702A;
+			remoteInfo = "Siesta iOS";
+		};
+		653676662367A0320073EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC0B37D1D651CB500D25C44;
+			remoteInfo = "SiestaUI iOS";
+		};
+		655CAC952358F70D00123C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 655CAC762358F70800123C52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 655CAC7D2358F70800123C52;
+			remoteInfo = BreweryDatabase;
+		};
+		655CACA02358F70D00123C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 655CAC762358F70800123C52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 655CAC7D2358F70800123C52;
+			remoteInfo = BreweryDatabase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		657EC2B42366468700C2EE52 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				655775022368C24500D045CB /* SiestaUI.framework in CopyFiles */,
+				655775012368C23E00D045CB /* Siesta.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6527974223676B32005F167D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6527974423676E45005F167D /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		6554AE8A23624B7500FB45F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6554AE8E23626CA100FB45F3 /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
+		6554AE9023626DBA00FB45F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		655775042368D94B00D045CB /* MockApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiService.swift; sourceTree = "<group>"; };
+		655BD101236AC416004113EE /* CellResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellResultViewController.swift; sourceTree = "<group>"; };
+		655CAC7E2358F70800123C52 /* BreweryDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreweryDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		655CAC872358F70D00123C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		655CAC8A2358F70D00123C52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		655CAC8D2358F70D00123C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		655CAC8F2358F70D00123C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655CAC942358F70D00123C52 /* BreweryDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreweryDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		655CAC9A2358F70D00123C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655CAC9F2358F70D00123C52 /* BreweryDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreweryDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		655CACA32358F70D00123C52 /* BreweryDatabaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDatabaseUITests.swift; sourceTree = "<group>"; };
+		655CACA52358F70D00123C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6582E29A237DC1E6008910A6 /* BreweryDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDatabaseTests.swift; sourceTree = "<group>"; };
+		6586C3C7237DE13C00575290 /* beerGlass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerGlass.png; path = Images.xcassets/beerGlass.png; sourceTree = "<group>"; };
+		658E6A70237939DA0036CED5 /* RealApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealApiService.swift; sourceTree = "<group>"; };
+		6596A86123663E2400C7DD14 /* Siesta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Siesta.xcodeproj; path = "Third-Party/Siesta/Siesta.xcodeproj"; sourceTree = "<group>"; };
+		6597D0DC237200B2006AAF07 /* SearchResultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewCell.swift; sourceTree = "<group>"; };
+		65C49C222366DD5C00DADC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65C49C242366E0AF00DADC1D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		655CAC7B2358F70800123C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653676692367A0D70073EEC2 /* Siesta.framework in Frameworks */,
+				6536766A2367A0D70073EEC2 /* SiestaUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655CAC912358F70D00123C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655CAC9C2358F70D00123C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6536764123679FE60073EEC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6536764F23679FE60073EEC2 /* Siesta.framework */,
+				6536765123679FE60073EEC2 /* Siesta.framework */,
+				6536765323679FE60073EEC2 /* Siesta.framework */,
+				6536765523679FE60073EEC2 /* Siesta.framework */,
+				6536765723679FE60073EEC2 /* SiestaUI.framework */,
+				6536765923679FE60073EEC2 /* SiestaUI.framework */,
+				6536765B23679FE60073EEC2 /* SiestaUI.framework */,
+				6536765D23679FE60073EEC2 /* SiestaTests.xctest */,
+				6536765F23679FE60073EEC2 /* SiestaTests.xctest */,
+				6536766123679FE60073EEC2 /* SiestaTests.xctest */,
+				6536766323679FE60073EEC2 /* SiestaPerformanceTests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653676682367A0D70073EEC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		655CAC752358F70800123C52 = {
+			isa = PBXGroup;
+			children = (
+				6596A86123663E2400C7DD14 /* Siesta.xcodeproj */,
+				655CAC802358F70800123C52 /* BreweryDatabase */,
+				655CAC972358F70D00123C52 /* BreweryDatabaseTests */,
+				655CACA22358F70D00123C52 /* BreweryDatabaseUITests */,
+				655CAC7F2358F70800123C52 /* Products */,
+				653676682367A0D70073EEC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		655CAC7F2358F70800123C52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				655CAC7E2358F70800123C52 /* BreweryDatabase.app */,
+				655CAC942358F70D00123C52 /* BreweryDatabaseTests.xctest */,
+				655CAC9F2358F70D00123C52 /* BreweryDatabaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		655CAC802358F70800123C52 /* BreweryDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				658E6A70237939DA0036CED5 /* RealApiService.swift */,
+				6597D0DC237200B2006AAF07 /* SearchResultViewCell.swift */,
+				6527974223676B32005F167D /* Model.swift */,
+				6527974423676E45005F167D /* SearchResultTableViewController.swift */,
+				65C49C242366E0AF00DADC1D /* Api.swift */,
+				655775042368D94B00D045CB /* MockApiService.swift */,
+				6554AE8E23626CA100FB45F3 /* SearchPageViewController.swift */,
+				655CAC872358F70D00123C52 /* Assets.xcassets */,
+				6586C3C7237DE13C00575290 /* beerGlass.png */,
+				655CAC8C2358F70D00123C52 /* LaunchScreen.storyboard */,
+				6554AE9023626DBA00FB45F3 /* Main.storyboard */,
+				655BD101236AC416004113EE /* CellResultViewController.swift */,
+				6554AE8A23624B7500FB45F3 /* ViewController.swift */,
+				655CAC8F2358F70D00123C52 /* Info.plist */,
+				655CAC892358F70D00123C52 /* Preview Content */,
+				65C49C222366DD5C00DADC1D /* AppDelegate.swift */,
+			);
+			path = BreweryDatabase;
+			sourceTree = "<group>";
+		};
+		655CAC892358F70D00123C52 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				655CAC8A2358F70D00123C52 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		655CAC972358F70D00123C52 /* BreweryDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				655CAC9A2358F70D00123C52 /* Info.plist */,
+				6582E29A237DC1E6008910A6 /* BreweryDatabaseTests.swift */,
+			);
+			path = BreweryDatabaseTests;
+			sourceTree = "<group>";
+		};
+		655CACA22358F70D00123C52 /* BreweryDatabaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				655CACA32358F70D00123C52 /* BreweryDatabaseUITests.swift */,
+				655CACA52358F70D00123C52 /* Info.plist */,
+			);
+			path = BreweryDatabaseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		655CAC7D2358F70800123C52 /* BreweryDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 655CACA82358F70D00123C52 /* Build configuration list for PBXNativeTarget "BreweryDatabase" */;
+			buildPhases = (
+				655CAC7A2358F70800123C52 /* Sources */,
+				655CAC7B2358F70800123C52 /* Frameworks */,
+				655CAC7C2358F70800123C52 /* Resources */,
+				657EC2B42366468700C2EE52 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653676652367A0320073EEC2 /* PBXTargetDependency */,
+				653676672367A0320073EEC2 /* PBXTargetDependency */,
+			);
+			name = BreweryDatabase;
+			productName = BreweryDatabase;
+			productReference = 655CAC7E2358F70800123C52 /* BreweryDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		655CAC932358F70D00123C52 /* BreweryDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 655CACAB2358F70D00123C52 /* Build configuration list for PBXNativeTarget "BreweryDatabaseTests" */;
+			buildPhases = (
+				655CAC902358F70D00123C52 /* Sources */,
+				655CAC912358F70D00123C52 /* Frameworks */,
+				655CAC922358F70D00123C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				655CAC962358F70D00123C52 /* PBXTargetDependency */,
+			);
+			name = BreweryDatabaseTests;
+			productName = BreweryDatabaseTests;
+			productReference = 655CAC942358F70D00123C52 /* BreweryDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		655CAC9E2358F70D00123C52 /* BreweryDatabaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 655CACAE2358F70D00123C52 /* Build configuration list for PBXNativeTarget "BreweryDatabaseUITests" */;
+			buildPhases = (
+				655CAC9B2358F70D00123C52 /* Sources */,
+				655CAC9C2358F70D00123C52 /* Frameworks */,
+				655CAC9D2358F70D00123C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				655CACA12358F70D00123C52 /* PBXTargetDependency */,
+			);
+			name = BreweryDatabaseUITests;
+			productName = BreweryDatabaseUITests;
+			productReference = 655CAC9F2358F70D00123C52 /* BreweryDatabaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		655CAC762358F70800123C52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Tommy Bennett";
+				TargetAttributes = {
+					655CAC7D2358F70800123C52 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					655CAC932358F70D00123C52 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 655CAC7D2358F70800123C52;
+					};
+					655CAC9E2358F70D00123C52 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 655CAC7D2358F70800123C52;
+					};
+				};
+			};
+			buildConfigurationList = 655CAC792358F70800123C52 /* Build configuration list for PBXProject "BreweryDatabase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 655CAC752358F70800123C52;
+			productRefGroup = 655CAC7F2358F70800123C52 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6536764123679FE60073EEC2 /* Products */;
+					ProjectRef = 6596A86123663E2400C7DD14 /* Siesta.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				655CAC7D2358F70800123C52 /* BreweryDatabase */,
+				655CAC932358F70D00123C52 /* BreweryDatabaseTests */,
+				655CAC9E2358F70D00123C52 /* BreweryDatabaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6536764F23679FE60073EEC2 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 6536764E23679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765123679FE60073EEC2 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 6536765023679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765323679FE60073EEC2 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 6536765223679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765523679FE60073EEC2 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 6536765423679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765723679FE60073EEC2 /* SiestaUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SiestaUI.framework;
+			remoteRef = 6536765623679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765923679FE60073EEC2 /* SiestaUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SiestaUI.framework;
+			remoteRef = 6536765823679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765B23679FE60073EEC2 /* SiestaUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SiestaUI.framework;
+			remoteRef = 6536765A23679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765D23679FE60073EEC2 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = 6536765C23679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536765F23679FE60073EEC2 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = 6536765E23679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536766123679FE60073EEC2 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = 6536766023679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6536766323679FE60073EEC2 /* SiestaPerformanceTests macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SiestaPerformanceTests macOS.xctest";
+			remoteRef = 6536766223679FE60073EEC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		655CAC7C2358F70800123C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6586C3C8237DE13C00575290 /* beerGlass.png in Resources */,
+				65C580822362711A00AA8468 /* LaunchScreen.storyboard in Resources */,
+				65C580812362711600AA8468 /* Main.storyboard in Resources */,
+				655CAC8B2358F70D00123C52 /* Preview Assets.xcassets in Resources */,
+				655CAC882358F70D00123C52 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655CAC922358F70D00123C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655CAC9D2358F70D00123C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		655CAC7A2358F70800123C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6527974323676B32005F167D /* Model.swift in Sources */,
+				65C49C232366DD5C00DADC1D /* AppDelegate.swift in Sources */,
+				6554AE8F23626CA100FB45F3 /* SearchPageViewController.swift in Sources */,
+				655775052368D94B00D045CB /* MockApiService.swift in Sources */,
+				658E6A71237939DB0036CED5 /* RealApiService.swift in Sources */,
+				65C49C252366E0AF00DADC1D /* Api.swift in Sources */,
+				6554AE8B23624B7500FB45F3 /* ViewController.swift in Sources */,
+				6527974523676E45005F167D /* SearchResultTableViewController.swift in Sources */,
+				6597D0E6237200B2006AAF07 /* SearchResultViewCell.swift in Sources */,
+				655BD102236AC416004113EE /* CellResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655CAC902358F70D00123C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6582E29B237DC1E6008910A6 /* BreweryDatabaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655CAC9B2358F70D00123C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655CACA42358F70D00123C52 /* BreweryDatabaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		653676652367A0320073EEC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Siesta iOS";
+			targetProxy = 653676642367A0320073EEC2 /* PBXContainerItemProxy */;
+		};
+		653676672367A0320073EEC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SiestaUI iOS";
+			targetProxy = 653676662367A0320073EEC2 /* PBXContainerItemProxy */;
+		};
+		655CAC962358F70D00123C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 655CAC7D2358F70800123C52 /* BreweryDatabase */;
+			targetProxy = 655CAC952358F70D00123C52 /* PBXContainerItemProxy */;
+		};
+		655CACA12358F70D00123C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 655CAC7D2358F70800123C52 /* BreweryDatabase */;
+			targetProxy = 655CACA02358F70D00123C52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		655CAC8C2358F70D00123C52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				655CAC8D2358F70D00123C52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		655CACA62358F70D00123C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		655CACA72358F70D00123C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		655CACA92358F70D00123C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BreweryDatabase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BreweryDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BreweryDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		655CACAA2358F70D00123C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BreweryDatabase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BreweryDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BreweryDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		655CACAC2358F70D00123C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreweryDatabaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BreweryDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreweryDatabase.app/BreweryDatabase";
+			};
+			name = Debug;
+		};
+		655CACAD2358F70D00123C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreweryDatabaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BreweryDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreweryDatabase.app/BreweryDatabase";
+			};
+			name = Release;
+		};
+		655CACAF2358F70D00123C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreweryDatabaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BreweryDatabaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BreweryDatabase;
+			};
+			name = Debug;
+		};
+		655CACB02358F70D00123C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreweryDatabaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BreweryDatabaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BreweryDatabase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		655CAC792358F70800123C52 /* Build configuration list for PBXProject "BreweryDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655CACA62358F70D00123C52 /* Debug */,
+				655CACA72358F70D00123C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		655CACA82358F70D00123C52 /* Build configuration list for PBXNativeTarget "BreweryDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655CACA92358F70D00123C52 /* Debug */,
+				655CACAA2358F70D00123C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		655CACAB2358F70D00123C52 /* Build configuration list for PBXNativeTarget "BreweryDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655CACAC2358F70D00123C52 /* Debug */,
+				655CACAD2358F70D00123C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		655CACAE2358F70D00123C52 /* Build configuration list for PBXNativeTarget "BreweryDatabaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655CACAF2358F70D00123C52 /* Debug */,
+				655CACB02358F70D00123C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 655CAC762358F70800123C52 /* Project object */;
+}
